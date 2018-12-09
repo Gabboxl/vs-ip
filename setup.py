@@ -8,5 +8,6 @@ setup(
     author_email='me@peppelg.space',
     license='The Unlicense',
     scripts=['vs-ip.py'],
+    install_requires=['splinter'],
     zip_safe=False
 )
