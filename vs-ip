@@ -2,7 +2,8 @@
 from splinter import Browser
 import time
 import json
-import os.path
+import os
+import pathlib
 import sys
 
 def changeIp(vsIp='192.168.1.1', password=None):
@@ -76,6 +77,10 @@ def setupConf():
     file.close()
     print('Setup completato.')
 
+
+home = str(pathlib.Path.home())+'/.vs-ip'
+pathlib.Path(home).mkdir(parents=True, exist_ok=True) 
+os.chdir(home)
 
 if 'setup' in sys.argv:
     setupConf()
