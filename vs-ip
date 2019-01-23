@@ -30,15 +30,22 @@ def changeIp(vsIp='192.168.1.1', password=None):
             browser.quit()
             quit()
         browser.visit('http://'+vsIp+'/main.cgi?page=app.html#cat=status-and-support_restart')
-        time.sleep(2)
-        ip = browser.find_by_css('#dsl_internet_WanIp').first.value
+        time.sleep(4)
+        if(browser.find_by_css('#dsl_internet_WanIp').first.value == 'Nessun indirizzo IP'):
+            tipoconnexxione = 'ethernet'
+            ip = browser.find_by_css('#ethernet_internet_WanIp').first.value
+            print("Hai una connexxione fibra")
+        else:
+            tipoconnexxione = 'dsl'
+            ip = browser.find_by_css('#dsl_internet_WanIp').first.value
+            print("Hai una connexxione DSL")
         print('IP in uso: '+ip)
         print('Provo a cambiare IP...')
-        browser.find_by_css('#dsl_btn_reconnect').click()
+        browser.find_by_css('#' + tipoconnexxione +'_btn_reconnect').click()
         try:
             while True:
-                if ip != browser.find_by_css('#dsl_internet_WanIp').first.value:
-                    ip = browser.find_by_css('#dsl_internet_WanIp').first.value
+                if ip != browser.find_by_css('#' + tipoconnexxione +'_internet_WanIp').first.value:
+                    ip = browser.find_by_css('#' + tipoconnexxione +'_internet_WanIp').first.value
                     if ip == 'Nessun indirizzo IP':
                         print('Attendere prego...')
                     else:
