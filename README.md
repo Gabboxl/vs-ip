@@ -6,8 +6,11 @@ Requisiti
 -------------
 Setuptools & Wheel: `sudo python -m pip install --upgrade pip setuptools wheel`
 
-Installa i pacchetti `firefox geckodriver` (arch: `sudo pacman -S firefox geckodriver` 
-altri systems:  `sudo apt install firefox` (per geckodriver -> https://github.com/mozilla/geckodriver/releases -> scarica versione x il tuo systems -> estrai il driver -> trasportalo in PATH)
+Installa i pacchetti `firefox` e `geckodriver`: 
+arch: `sudo pacman -S firefox geckodriver`; 
+
+altri systems: `sudo apt install firefox`
+*geckodriver* -> https://github.com/mozilla/geckodriver/releases -> scarica versione x il tuo systems -> estrai il driver -> trasportalo in PATH
 
 Compilazione
 ------------
