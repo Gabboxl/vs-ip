@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='vs-ip',
-    version='0.2.4',
+    version='0.2.5',
     url='http://github.com/peppelg/vs-ip',
     author='peppelg',
     author_email='me@peppelg.space',

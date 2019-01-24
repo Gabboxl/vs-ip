@@ -1,11 +1,20 @@
 # vs-ip: Cambia automaticamente indirizzo IP con la Vodafone Station Revolution
 ![vs-ip](https://i.imgur.com/JDJtWA3.png)
 
-Installazione
+# Installazione (compilazione)
+Requisiti
 -------------
-Installa i pacchetti `firefox geckodriver` (`sudo pacman -S firefox geckodriver` o `sudo apt install firefox geckodriver`
+Setuptools & Wheel: `sudo python -m pip install --upgrade pip setuptools wheel`
 
-Poi `pip install vs-ip`
+Installa i pacchetti `firefox geckodriver` (arch: `sudo pacman -S firefox geckodriver` 
+altri systems:  `sudo apt install firefox` (per geckodriver -> https://github.com/mozilla/geckodriver/releases -> scarica -> estrai il driver -> trasportalo in PATH)
+
+Compilazione
+------------
+1) klona il project's
+2) build: `python setup.py bdist_wheel`
+3) installa con pip's::::  `sudo python -m pip install dist/vs_ip-0.2.5-py3-none-any.whl`
+
 
 Avviare
 -------
@@ -14,3 +23,4 @@ Avviare
 Cambiare configurazione
 -----------------------
 `vs-ip setup`
+
