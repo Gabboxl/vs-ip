@@ -15,6 +15,9 @@ Compilazione
 2) build: `python setup.py bdist_wheel`
 3) installa con pip's::::  `sudo python -m pip install dist/vs_ip-0.2.5-py3-none-any.whl`
 
+OPPURE;.,,
+
+sckript comingsoon
 
 Avviare
 -------
