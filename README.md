@@ -6,9 +6,15 @@ Requisiti
 -------------
 * Setuptools & Wheel: `sudo python -m pip install --upgrade pip setuptools wheel`
 
-* I pacchetti `firefox` e `geckodriver`: 
-Arch e derivati (es. Manjaro)= `sudo pacman -S firefox geckodriver`; 
-altri systems (es. debian): `sudo apt install firefox` POI -> *geckodriver* -> https://github.com/mozilla/geckodriver/releases -> scarica versione x il tuo systems -> estrai il driver -> trasportalo in PATH
+* `firefox`
+* `geckodriver`
+
+| Systems' | Firefox | Geckodriver |
+| ------ | ------ | ------ |
+| Arch e derivati | `sudo pacman -S firefox geckodriver` | (già fatto) |
+| Debian e altri | `sudo apt install firefox`  | https://github.com/mozilla/geckodriver/releases -> scarica versione x il tuo systems -> estrai tecnologia -> trasportalo in PATH |
+| Windous | Installa firefox's E aggiungi il percorso di installazione a PATH (variabili d'ambiente in pannello di scontrollo)  | ^^^^^^^^
+
 
 Compilazione + installazione
 ------------
