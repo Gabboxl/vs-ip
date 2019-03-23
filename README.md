@@ -5,9 +5,9 @@
 Requisiti
 -------------
 * Setuptools & Wheel: `sudo python -m pip install --upgrade pip setuptools wheel`
-
 * `firefox`
 * `geckodriver`
+* Six: `sudo pip install six`
 
 | Systems' | Firefox | Geckodriver |
 | ------ | ------ | ------ |
@@ -20,7 +20,7 @@ Compilazione + installazione
 ------------
 1) klona il project's (`git clone https://github.com/Gabboxl/vs-ip.git`) ((((entra poi nella cartella))))
 2) builda: `python setup.py bdist_wheel`
-3) installa con pip's::::  `sudo python -m pip install dist/vs_ip-0.2.5-py3-none-any.whl`
+3) installa con pip's::::  `sudo pip install dist/vs_ip-0.2.7-py3-none-any.whl`
 
 OPPURE;.,,
 
@@ -33,4 +33,3 @@ Avviare
 Cambiare configurazione
 -----------------------
 `vs-ip setup`
-
